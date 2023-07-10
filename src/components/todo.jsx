@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Todos.css';
-import { AiOutlineCloseCircle, AiOutlineCheck } from 'react-icons/ai';
+import { AiFillDelete, AiOutlineCheck } from 'react-icons/ai';
+
 function Todo({ id, text, completed, completeTodo, deleteTodo }) {
     return (
         <div className={completed ? 'todo-container completed' : 'todo-container'}>
@@ -17,7 +18,7 @@ function Todo({ id, text, completed, completeTodo, deleteTodo }) {
                 className="todo-container-icons"
                 onClick={() => deleteTodo(id)}
             >
-                <AiOutlineCloseCircle className='todo-icon' />
+                <AiFillDelete className='todo-icon' />
             </div>
         </div>
     )

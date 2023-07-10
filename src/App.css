@@ -27,7 +27,7 @@ h1{
     align-items: center;
 }
 
-/* Logo de freeCodeCamp */
+/* =========Logo de freeCodeCamp========= */
 
 .freecodecamp-logo-contenedor{
     width: 100%;
@@ -41,7 +41,7 @@ h1{
     height: 50px;
 }
 
-/* List tasks */
+/* =========List tasks========= */
 
 .main-task-list{
     width: 600px;

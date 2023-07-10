@@ -6,8 +6,6 @@ import '../styles/TodoList.css';
 function TodoList() {
     const [todos, setTodos] = useState([])
     const addTodo = todo => {
-        //console.log('Added todo')
-        //console.log(todo)
         if (todo.text.trim()) {
             todo.text = todo.text.trim()
             const updatedTodos = [todo, ...todos]
@@ -32,8 +30,8 @@ function TodoList() {
         <>
             <TodoForm onSubmit={addTodo} />
             <div className="todo-list-container">
-                {/* Cada todo se va representar como un objeto en el arreglo (array). */
-                    todos.map((todo) => /* todo es un objeto */
+                {
+                    todos.map((todo) => 
                         <Todo
                             key={todo.id}
                             id={todo.id}

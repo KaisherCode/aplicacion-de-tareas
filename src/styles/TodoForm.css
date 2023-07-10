@@ -1,4 +1,4 @@
-/* Estructura principal */
+/* =========Estructura principal========= */
 .todo-form{
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +14,7 @@
     border:2px solid #00471b;
     outline: none;
 }
-/* Boton agregar tarea */
+/* =========Boton agregar tarea========= */
 
 .todo-button{
     padding: 16px;
