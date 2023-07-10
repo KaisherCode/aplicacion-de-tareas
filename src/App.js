@@ -1,7 +1,6 @@
 import './App.css';
 import freeCodeCampLogo from './images/freecodecamp-logo.png'
-import {Todo} from './components/todo'
-import { TodoForm } from './components/TodoForm';
+import { TodoList } from './components/TodoList';
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
       </div>
       <div className='main-task-list'>
         <h1>My tasks</h1>
-        <TodoForm/>
+        <TodoList/>
       </div>
     </div>
   );

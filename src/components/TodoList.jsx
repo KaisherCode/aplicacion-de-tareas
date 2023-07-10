@@ -1,5 +1,6 @@
-import React from "react";
-import { TodoForm } from "./TodoForm";
+import React from 'react';
+import { TodoForm } from './TodoForm';
+import '../styles/TodoList.css';
 
 function TodoList(){
     return(
