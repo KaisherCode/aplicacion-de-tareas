@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/TodoForm.css';
 
 function TodoForm(props) {
     return (
@@ -9,7 +10,7 @@ function TodoForm(props) {
                 placeholder="Write a todo"
                 name="text"
             />
-            <button className="todo-button">Agregar tarea</button>
+            <button className="todo-button">Add todo</button>
         </form>
     )
 }

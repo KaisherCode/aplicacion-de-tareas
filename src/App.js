@@ -1,6 +1,7 @@
 import './App.css';
 import freeCodeCampLogo from './images/freecodecamp-logo.png'
 import {Todo} from './components/todo'
+import { TodoForm } from './components/TodoForm';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       </div>
       <div className='main-task-list'>
         <h1>My tasks</h1>
-        <Todo text='Aprender React.js'/>
+        <TodoForm/>
       </div>
     </div>
   );
