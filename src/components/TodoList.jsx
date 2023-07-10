@@ -14,6 +14,10 @@ function TodoList() {
             setTodos(updatedTodos)
         }
     }
+    const deleteTodo = (id) =>{
+        const updatedTodos = todos.filter(todo=>todo.id != id)
+        setTodos(updatedTodos)
+    }
     return (
         <>
             <TodoForm onSubmit={addTodo} />
@@ -25,6 +29,7 @@ function TodoList() {
                             id={todo.id}
                             text={todo.text}
                             completed={todo.completed}
+                            deleteTodo={deleteTodo}
                         />
                     )
                 }
