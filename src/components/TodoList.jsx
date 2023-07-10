@@ -8,7 +8,14 @@ function TodoList() {
         <>
             <TodoForm />
             <div className="todo-list-container">
-                LISTA DE TODOs
+                {/* Cada todo se va representar como un objeto en el arreglo (array). */
+                    todos.map((todo) => /* todo es un objeto */
+                        <Todo
+                            text={todo.text}
+                            completed={todo.completed}
+                        />
+                    )
+                }
             </div>
         </>
     )
