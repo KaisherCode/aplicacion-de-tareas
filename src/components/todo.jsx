@@ -1,5 +1,5 @@
-import React from "react";
-
+import React from 'react';
+import '../styles/Todos.css';
 function Todo ({text}){
     return(
         <div className="todo-container">
