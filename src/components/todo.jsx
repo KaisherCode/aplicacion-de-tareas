@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Todos.css';
 import { AiOutlineCloseCircle, AiOutlineCheck } from 'react-icons/ai';
-function Todo({ id, text, completed, todoComplete, deleteTodo }) {
+function Todo({ id, text, completed, completeTodo, deleteTodo }) {
     return (
         <div className={completed ? 'todo-container completed' : 'todo-container'}>
             <div className='todo-container-icons'>
@@ -9,7 +9,7 @@ function Todo({ id, text, completed, todoComplete, deleteTodo }) {
             </div>
             <div
                 className="todo-text"
-                onClick={() => todoComplete(id)}
+                onClick={() => completeTodo(id)}
             >
                 {text}
             </div>

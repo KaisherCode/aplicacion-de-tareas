@@ -15,7 +15,7 @@ function TodoForm(props) {
         const newTodo = {
             id:uuidv4(),
             text:input,
-            completed:false,
+            completed:false
         }
         //console.log(newTodo)
         props.onSubmit(newTodo)

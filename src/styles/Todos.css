@@ -40,8 +40,7 @@
 
 /* =========Todo completed======== */
 
-.todo-container,
-.completed{
+.todo-container.completed{
     background-color: #5a01a7;
     text-decoration: line-through;
 }
