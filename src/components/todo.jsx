@@ -5,7 +5,7 @@ function Todo ({text,completed}){
     return(
         <div className={completed? 'todo-container completed':'todo-container'}>
             <div className='todo-container-icons'>
-                <AiOutlineCheck className='todo-icon'/>
+                <AiOutlineCheck className='todo-icon '/>
             </div>
             <div className="todo-text">
                 {text}

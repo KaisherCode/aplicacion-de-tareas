@@ -26,3 +26,11 @@
     height: 25px;
     margin: 5px;
 }
+
+/* =========Todo completed======== */
+
+.todo-container,
+.completed{
+    background-color: #5a01a7;
+    text-decoration: line-through;
+}
