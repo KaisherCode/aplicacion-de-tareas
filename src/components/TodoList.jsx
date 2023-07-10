@@ -7,9 +7,9 @@ function TodoList() {
     const [todos, setTodos] = useState([])
     const addTodo = todo => {
         //console.log('Added todo')
-        //console.log(todo)
+        console.log(todo)
         if (todo.text.trim()) {
-            todo.texto = todo.text.trim()
+            todo.text = todo.text.trim()
             const updatedTodos = [todo, ...todos]
             setTodos(updatedTodos)
         }
@@ -21,6 +21,8 @@ function TodoList() {
                 {/* Cada todo se va representar como un objeto en el arreglo (array). */
                     todos.map((todo) => /* todo es un objeto */
                         <Todo
+                            key={todo.id}
+                            id={todo.id}
                             text={todo.text}
                             completed={todo.completed}
                         />
