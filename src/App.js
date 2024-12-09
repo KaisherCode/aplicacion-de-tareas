@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App-todos">
       <div className='freecodecamp-logo-contenedor'>
-        <img src={freeCodeCampLogo} className='freecodecamp-logo' />
+        <img src={freeCodeCampLogo} className='freecodecamp-logo' alt='Lo freeCodeCamp' />
       </div>
       <div className='main-task-list'>
         <h1>My tasks</h1>
